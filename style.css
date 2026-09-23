@@ -358,6 +358,43 @@ text-align: center;
     color:#cccccc;
 }
 
+/* CSS for Contact us  */
+.cont{
+     background-color:#5e4bbd;
+     height: 20vh;
+     border-radius: 2%;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     color: aqua;
+     position: relative;
+}
+.cont h1{
+        position: relative;
+        top: 4vh;
+        font-size:5vh;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 'Courier New', Courier, monospace;
+}
+
+.form{
+    display: flex;
+    position: relative;
+    /* left: 2vw; */
+}
+.input{
+    border-top: none;
+    border-color: #5B3DF5;
+    border-right: none;
+    border-left: none;
+    width: 100vw;
+    height: 3vh;
+}
+
+.label {
+    font-size: 2vh;
+    font-weight: 100;
+}
+
 
 
 @media screen and (max-width:1024px){
