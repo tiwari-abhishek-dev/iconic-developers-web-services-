@@ -2,7 +2,10 @@ body{
     margin:0;
     padding:0;
     background-color:whitesmoke;
-
+    background: linear-gradient(to right, rgb(132, 132, 235),rgb(63, 211, 221));
+}
+html{
+    scroll-behavior: smooth;
 }
 .logo{
     display:flex;
@@ -125,14 +128,17 @@ background-color: darkblue;
 color:white;
 transform: translatey(-5px);
  }
-.service h2{
+ #service{
+    scroll-margin-top: 18vh;
+ }
+#service h2{
     text-transform: capitalize;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 100px;
 
 }
-.service p{
+#service p{
     text-transform: capitalize;
     text-align: center;
     font-size:small;
@@ -359,41 +365,161 @@ text-align: center;
 }
 
 /* CSS for Contact us  */
+
+@keyframes input_line{
+    from{
+        width: 0%;
+        border-bottom-color: aqua;
+        
+    }
+    to{
+        width: 100%;
+        border-bottom-color: aqua;
+    }
+     
+}
 .cont{
-     background-color:#5e4bbd;
-     height: 20vh;
+     
+     background: linear-gradient(to right, rgb(12, 148, 211),rgb(107, 169, 173));
+    
+     width: 100%;
      border-radius: 2%;
-     display: flex;
-     justify-content: center;
-     align-content: center;
+   
+     justify-items: center;
+     align-content:center;
      color: aqua;
      position: relative;
+     
 }
-.cont h1{
-        position: relative;
-        top: 4vh;
+
+.cont1{
+        
+        text-shadow: 2px 1px 1px aqua;
+        padding: 0px;
         font-size:5vh;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 'Courier New', Courier, monospace;
+}
+.cont2{
+        position: relative;
+        font-size: 3vh;
+        color: rgb(255, 252, 252);
+        text-shadow: 1px 2px 3px white;
+        
+      
+}
+.cont3{
+    font-size: 2vh;
+    color: rgb(255,255,255);
+    
+}
+
+.Contact_part{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-rows: repeat(3,minmax(100px,auto));
+   
 }
 
 .form{
     display: flex;
     position: relative;
-    /* left: 2vw; */
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
 }
+
 .input{
-    border-top: none;
-    border-color: #5B3DF5;
-    border-right: none;
-    border-left: none;
-    width: 100vw;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid  #5B3DF5;
+    width: 30vw;
     height: 3vh;
+    background: transparent;
+}
+.input:focus{
+    
+    animation: input_line 1s  forwards;
+   
+}
+
+#textarea{
+    border: none;
+    border-bottom: 2px solid #5B3DF5 ;
+    outline: none;
+    background:transparent;
+    width: 30vw;
+    height: 5vh;
+    
+}
+#textarea:focus{
+    animation: input_line 1s forwards;
 }
 
 .label {
     font-size: 2vh;
     font-weight: 100;
 }
+
+.submit{
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 30vw;
+    height: 3vh;
+    border: none;
+    border-radius: 20px;
+    
+    background-color: #5B3DF5;
+    
+}
+.submit:hover{
+    cursor: pointer;
+}
+
+.Company_detail{
+ 
+  position: relative;
+  left: 8vw;
+
+}
+
+.Business_hour{
+    
+    position: relative;
+    left: 8vw;
+}
+
+.quality{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: repeat(2,minmax(100px,auto));
+}
+.quality ul{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    row-gap: 5vh;
+    column-gap: 50vh;
+    list-style:square;
+    font-style: bold;
+    font-size: 2.5vh;
+}
+.quality p{
+    justify-self: center;
+}
+
+.Contact_heading{
+    color: black;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+
+
+
 
 
 
