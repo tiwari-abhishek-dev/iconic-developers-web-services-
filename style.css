@@ -2,7 +2,8 @@ body{
     margin:0;
     padding:0;
     background-color:whitesmoke;
-    background: linear-gradient(to right, rgb(132, 132, 235),rgb(63, 211, 221));
+    
+    background: linear-gradient(180deg, rgb(132, 132, 235),rgb(63, 211, 221));
 }
 html{
     scroll-behavior: smooth;
@@ -381,14 +382,13 @@ text-align: center;
 .cont{
      
      background: linear-gradient(to right, rgb(12, 148, 211),rgb(107, 169, 173));
-    
      width: 100%;
      border-radius: 2%;
-   
      justify-items: center;
      align-content:center;
      color: aqua;
      position: relative;
+     line-height: 2vh;
      
 }
 
@@ -399,7 +399,7 @@ text-align: center;
         font-size:5vh;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 'Courier New', Courier, monospace;
 }
-.cont2{
+.cont3{
         position: relative;
         font-size: 3vh;
         color: rgb(255, 252, 252);
@@ -407,35 +407,38 @@ text-align: center;
         
       
 }
-.cont3{
+.cont2{
     font-size: 2vh;
     color: rgb(255,255,255);
+    position: relative;
+    left: 3vw;
+    text-align: center;
     
 }
 
 .Contact_part{
-    display: grid;
-    grid-template-columns: repeat(2,minmax(100px,auto));
-    grid-template-rows: repeat(3,minmax(100px,auto));
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.form{
-    display: flex;
-    position: relative;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    
+
+.Contact_heading{
+    color: black;
+    font-size: 4vh;
+    font-weight: bold;
+    justify-self: center;
 }
 
 .input{
     outline: none;
     border: none;
     border-bottom: 2px solid  #5B3DF5;
-    width: 30vw;
+    width: 70vw;
     height: 3vh;
     background: transparent;
+    color:black;
+    font-size: 1.5vh;
 }
 .input:focus{
     
@@ -448,7 +451,7 @@ text-align: center;
     border-bottom: 2px solid #5B3DF5 ;
     outline: none;
     background:transparent;
-    width: 30vw;
+    width: 70vw;
     height: 5vh;
     
 }
@@ -458,16 +461,28 @@ text-align: center;
 
 .label {
     font-size: 2vh;
-    font-weight: 100;
+    font-weight: bold;
+    position: relative;
 }
+
+#textarea_maxLength{
+   position: absolute;
+    right: 8px;
+    bottom: 8px; 
+    pointer-events:all;
+    color: rgb(105,95,95);
+
+}
+
+
 
 .submit{
     color: white;
     font-weight: bold;
     font-size: 2vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 30vw;
-    height: 3vh;
+    width: 70vw;
+    height: 4vh;
     border: none;
     border-radius: 20px;
     
@@ -478,18 +493,8 @@ text-align: center;
     cursor: pointer;
 }
 
-.Company_detail{
- 
-  position: relative;
-  left: 8vw;
 
-}
 
-.Business_hour{
-    
-    position: relative;
-    left: 8vw;
-}
 
 .quality{
     grid-column-start: 1;
@@ -511,11 +516,7 @@ text-align: center;
     justify-self: center;
 }
 
-.Contact_heading{
-    color: black;
-    font-size: 3vh;
-    font-weight: bold;
-}
+
 
 
 
